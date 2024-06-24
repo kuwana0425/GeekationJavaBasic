@@ -4,8 +4,8 @@ public class Variables {
 
 	public static void main(String[] args) {
 		String subject = "私の";
-	    String adjective = "好きな";
-	    String verb ="です。";
+		String adjective = "好きな";
+		String verb ="です。";
 	    
 	    int num1;
 	    double num2;
