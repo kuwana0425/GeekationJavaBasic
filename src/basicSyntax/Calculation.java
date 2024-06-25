@@ -22,5 +22,5 @@ public class Calculation {
 		System.out.println( variable + "z" + value +(int)z + verb);
 		System.out.println( variable + "a" + value + a + verb);
 		System.out.println( variable + "b" + value + b + verb);
-		}
 	}
+}
