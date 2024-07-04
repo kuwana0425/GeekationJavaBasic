@@ -1,27 +1,36 @@
 package basicSyntax;
 
 public class MethodPractice {
-
 	public static void main(String[] args) {
-		int a, b;
+		int a = 10;
+		int b = 5;
 		
-		a = 10;
-		b = 8;
-		add(a, b);
-		sub(a,b);
-		mult(a,b);
-		div(a,b);
-	}
-	static void add(int a, int b) {
-		System.out.println("計算結果は"+(a+b)+"です。");
-	}
-	static void sub(int a, int b) {
-		System.out.println("計算結果は"+(a-b)+"です。");
-	}
-	static void mult(int a, int b) {
-		System.out.println("計算結果は"+(a*b)+"です。");
-	}
-	static void div(int a, int b) {
-		System.out.println("計算結果は"+(a/b)+"です。");
+		System.out.println("計算結果は" + calculation(a, b, 0)+"です。");
+		System.out.println("計算結果は" + calculation(a, b, 1)+"です。");
+		System.out.println("計算結果は" + calculation(a, b, 2)+"です。");
+		System.out.println("計算結果は" + calculation(a, b, 3)+"です。");
+    }
+	public static int calculation(int value1, int value2, int type) {
+		
+		int result = 0;
+		switch(type) {
+		
+		case 0:
+			result = value1 + value2;
+			break;
+			
+		case 1:
+			result = value1 - value2;
+			break;
+			
+		case 2:
+			result = value1 * value2;
+			break;
+			
+		case 3:
+			result = value1 / value2;
+			break;
+		}
+		return result;
 	}
 }
