@@ -1,36 +1,37 @@
 package basicSyntax;
-
 public class MethodPractice {
 	public static void main(String[] args) {
-		int a = 10;
-		int b = 5;
+	int result1 =add(10,5);
+	int result2 =sub(10,5);
+	int result3 =mult(10,5);
+	int result4 =div(10,5);
+	
+	System.out.println("計算結果は"+result1+"です。");
+	System.out.println("計算結果は"+result2+"です。");
+	System.out.println("計算結果は"+result3+"です。");
+	System.out.println("計算結果は"+result4+"です。");
+}
+	private static int add(int a, int b) {
+		int x = a + b;
 		
-		System.out.println("計算結果は" + calculation(a, b, 0)+"です。");
-		System.out.println("計算結果は" + calculation(a, b, 1)+"です。");
-		System.out.println("計算結果は" + calculation(a, b, 2)+"です。");
-		System.out.println("計算結果は" + calculation(a, b, 3)+"です。");
-    }
-	public static int calculation(int value1, int value2, int type) {
+		return x;
+	}
+	
+	private static int sub(int a, int b) {
+		int x = a - b;
 		
-		int result = 0;
-		switch(type) {
+		return x;
+	}
+	
+	private static int mult(int a, int b) {
+		int x = a * b;
 		
-		case 0:
-			result = value1 + value2;
-			break;
-			
-		case 1:
-			result = value1 - value2;
-			break;
-			
-		case 2:
-			result = value1 * value2;
-			break;
-			
-		case 3:
-			result = value1 / value2;
-			break;
-		}
-		return result;
+		return x;
+	}
+	
+	private static int div(int a, int b) {
+		int x = a / b;
+		
+		return x;
 	}
 }
