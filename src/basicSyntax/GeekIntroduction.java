@@ -11,10 +11,10 @@ public static void specialSkill(int num1,int num2) {
 	
 	while (num1 < num2) {
 		num1++;
-	if (num1 < 1 || num2 < 1) {
+	if (num1 < 0 || num2 < 0) {
 		System.out.println("num1とnum2は0より大きい値にしてください。");
 		break;
-	} else if (num1 > num2) {
+	} else if (num1 >= num2) {
 		System.out.println("num2はnum1より大きい値にしてください。");
 		break;
 	} else if (num1 > 300 || num2 > 300) {
@@ -30,6 +30,7 @@ public static void specialSkill(int num1,int num2) {
 		System.out.println(num1+"は5の倍数です。");
 		continue;
 	}
+	System.out.println(num1);
 	}
 }
 }
