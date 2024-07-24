@@ -10,17 +10,15 @@ public static void greeting(int age,double height){
 
 public static void specialSkill(int num1,int num2) {
 	
-	if (num1 >= num2) {
+	if (num1 < 0 || num2 < 0) {
+		System.out.println("num1とnum2は0より大きい値にしてください。");
+	}if (num1 >= num2) {
 		System.out.println("num2はnum1より大きい値にしてください。");
+	}if (num1 > 300 || num2 > 300) {
+		System.out.println("num1とnum2は300以下にしてください。");
 	}
 	while(num1 <= num2){
-		if (num1 < 0 || num2 < 0) {
-			System.out.println("num1とnum2は0より大きい値にしてください。");
-			break;
-		}else if (num1 > 300 || num2 > 300) {
-			System.out.println("num1とnum2は300以下にしてください。");
-			break;
-		}else if (num1 % 15 == 0){
+		if (num1 % 15 == 0){
 			System.out.println(num1+"は3の倍数かつ5の倍数です。");
 		}else if (num1 % 3 == 0) {
 			System.out.println(num1+"は3の倍数です。");
