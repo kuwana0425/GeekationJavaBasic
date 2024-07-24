@@ -10,6 +10,9 @@ public static void greeting(int age,double height){
 
 public static void specialSkill(int num1,int num2) {
 	
+	if (num1 >= num2) {
+		System.out.println("num2はnum1より大きい値にしてください。");
+	}
 	while(num1 <= num2){
 		if (num1 < 0 || num2 < 0) {
 			System.out.println("num1とnum2は0より大きい値にしてください。");
@@ -25,8 +28,6 @@ public static void specialSkill(int num1,int num2) {
 			System.out.println(num1+"は5の倍数です。");
 		}else System.out.println(num1);
 		num1++;
-		}if (num1 >= num2) {
-			System.out.println("num2はnum1より大きい値にしてください。");
 		}
 	}
 }

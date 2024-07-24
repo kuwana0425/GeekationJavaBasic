@@ -10,6 +10,7 @@ public class Main {
 	
 		int num1=1;
 		int num2=50;
+	
 		GeekIntroduction.specialSkill(num1,num2);
 	}	
 	}
