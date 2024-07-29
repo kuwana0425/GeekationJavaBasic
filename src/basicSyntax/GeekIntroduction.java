@@ -10,14 +10,13 @@ public static void greeting(int age,double height){
 
 public static void specialSkill(int num1,int num2) {
 	
-	if (num1 >= num2){
+	if (num1 < 1 || num2 < 1) {
+		System.out.println("num1とnum2は0より大きい値にしてください。");
+	}if (num1 >= num2){
 		System.out.println("num2はnum1より大きい値にしてください。");
 	}
 	while(num1 <= num2){
-		if (num1 < 1 || num2 < 1) {
-			System.out.println("num1とnum2は0より大きい値にしてください。");
-			break;
-		}else if (num1 > 300 || num2 > 300) {
+		if (num1 > 300 || num2 > 300) {
 			System.out.println("num1とnum2は300以下にしてください。");
 			break;
 		}else if (num1 % 15 == 0){

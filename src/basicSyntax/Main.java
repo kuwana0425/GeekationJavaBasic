@@ -3,7 +3,7 @@ package basicSyntax;
 public class Main {
 
 	public static void main(String[] args) {
-		int age = 10;
+		int age = 0;
 		double height  = 150;
 
 		GeekIntroduction.greeting(age,height);
@@ -13,4 +13,4 @@ public class Main {
 	
 		GeekIntroduction.specialSkill(num1,num2);
 	}	
-	}
+}
