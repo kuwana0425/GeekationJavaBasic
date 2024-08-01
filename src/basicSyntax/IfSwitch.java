@@ -27,6 +27,6 @@ public class IfSwitch {
 		default:
 			System.out.println("当てはまりません。");
 			break;
+		    }
 		}
 	}
-}
