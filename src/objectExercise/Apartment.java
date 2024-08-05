@@ -1,14 +1,15 @@
 package objectExercise;
 
 public class Apartment extends Property {
-	protected String floorsize;
+	protected String FloorSize;
 	
-	Apartment(String propertyname,String name, String propertytype, int price,String floorsize) {
-		super(propertyname,name, propertytype,price);
-		this.floorsize = floorsize;
+	Apartment(String PropertyName,String OwnerName, String PropertyType, int PropertyPrice,String FloorSize) {
+		super(PropertyName,OwnerName, PropertyType,PropertyPrice);
+		this.FloorSize = FloorSize;
 	}
 	public void greeting() {
 		super.greeting();
-		System.out.println("間取り：" + this.floorsize);
+		System.out.println("間取り：" + this.FloorSize);
+		System.out.println("=============================");
 	}
 }

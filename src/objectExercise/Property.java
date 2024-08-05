@@ -1,42 +1,47 @@
 package objectExercise;
 
 public class Property {
-	protected String propertyname;
-	protected String name;
-	protected String propertytype;
-	protected int price;
+	protected String PropertyName;
+	protected String OwnerName;
+	protected String PropertyType;
+	protected int PropertyPrice;
 	
-	Property(String propertyname,String name, String propertytype, int price) {
-	  this.propertyname = propertyname;
-	  this.name = name;
-	  this.propertytype = propertytype;
-	  this.price =price;
+	Property(String PropertyName,String OwnerName, String PropertyType, int PropertyPrice) {
+	  this.PropertyName = PropertyName;
+	  this.OwnerName = OwnerName;
+	  this.PropertyType = PropertyType;
+	  this.PropertyPrice =PropertyPrice;
 	  }
 	
-	public String getpropertyname() {
-	  return this.propertyname;
+	public String getPropertyName() {
+	  return this.PropertyName;
 	  }
-	public String getname() {
-	  return this.name;
+	public String getOwnerName() {
+	  return this.OwnerName;
 	  }
-	public String getpropertytype() {
-	  return this.propertytype;
+	public String getPropertyType() {
+	  return this.PropertyType;
 	  }
-	public int getprice() {
-	  return this.price;
+	public int getPropertyPrice() {
+	  return this.PropertyPrice;
 	  }
-	public void setpropertyname(String propertyname) {
-	  this.propertyname = propertyname;
+	public void setpropertyname(String PropertyName) {
+	  this.PropertyName = PropertyName;
 	  }
-	public void setname(String name) {
-	  this.name = name;
+	public void setOwnerName(String OwnerName) {
+	  this.OwnerName = OwnerName;
 	  }
-	public void setpropertytype(String propertytype) {
-	  this.propertytype = propertytype;
+	public void setPropertyType(String PropertyType) {
+	  this.PropertyType = PropertyType;
 	  }
-	public void setprice(int price) {
-	  this.price = price;
+	public void setPropertyPrice(int PropertyPrice) {
+	  this.PropertyPrice = PropertyPrice;
 	  }
 	public void greeting() {
+		System.out.println("=============================");
+		System.out.println("物件名："+ this.PropertyName);
+		System.out.println("物件所有者名："+ this.OwnerName);
+		System.out.println("物件種別："+ this.PropertyType);
+		System.out.println("物件価格："+this.PropertyPrice +"円");
 	}
 }
